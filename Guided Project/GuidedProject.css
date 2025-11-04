@@ -1,0 +1,52 @@
+body {
+  background-color: #e6f3ff;
+  padding: 12%;
+}
+
+strong {
+  font-weight: Bold;
+}
+
+img {
+  float: right;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  font-family: Times New Roman;
+  font-size: 10px;
+  padding: 3px;
+  background-color: Orange;
+  color: Black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.tagline {
+  color: blueviolet;
+  font-style: italic;
+}
+
+.pricetopic{
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.offers {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
