@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenwood Academy - Excellence in Education</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🎓 Greenwood Academy</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#calculator">GPA Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Greenwood Academy</h1>
+            <p>Nurturing Young Minds for a Brighter Tomorrow</p>
+        </div>
+    </div>
+
+    <main>
+        <section id="gallery">
+            <h2>📸 Campus Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80" alt="Library">
+                    <div class="gallery-caption">Modern Library</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581092334540-22d54b0a6a49?auto=format&fit=crop&w=800&q=80" alt="Science Lab">
+                    <div class="gallery-caption">Science Laboratory</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="Sports">
+                    <div class="gallery-caption">Sports Complex</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1535905748047-14b2415c57c5?auto=format&fit=crop&w=800&q=80" alt="Art Studio">
+                    <div class="gallery-caption">Art Studio</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581091012184-7a7cfb70b2a5?auto=format&fit=crop&w=800&q=80" alt="Computer Lab">
+                    <div class="gallery-caption">Computer Lab</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="programs">
+            <h2>📚 Our Academic Programs</h2>
+            <div class="programs-list">
+                <ul>
+                    <li>Primary Education (Grades 1–5) - Building strong foundations</li>
+                    <li>Middle School (Grades 6–8) - Developing critical thinking skills</li>
+                    <li>High School (Grades 9–12) - Advanced placement and college prep</li>
+                    <li>STEM Programs - Science, Technology, Engineering, and Mathematics</li>
+                    <li>Arts & Music - Creative expression and cultural appreciation</li>
+                    <li>Sports & Physical Education - Health and teamwork development</li>
+                    <li>Language Programs - English, Spanish, French, and Mandarin</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="schedule">
+            <h2>📅 Weekly Class Schedule</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8:00 - 9:00</td>
+                        <td>Mathematics</td>
+                        <td>English</td>
+                        <td>Science</td>
+                        <td>History</td>
+                        <td>Arts</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 - 10:00</td>
+                        <td>English</td>
+                        <td>Mathematics</td>
+                        <td>Physical Ed</td>
+                        <td>Science</td>
+                        <td>Music</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 11:00</td>
+                        <td>Science</td>
+                        <td>History</td>
+                        <td>Mathematics</td>
+                        <td>English</td>
+                        <td>Computer</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 - 12:00</td>
+                        <td>History</td>
+                        <td>Science</td>
+                        <td>English</td>
+                        <td>Mathematics</td>
+                        <td>Language</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 - 2:00</td>
+                        <td>Physical Ed</td>
+                        <td>Arts</td>
+                        <td>Computer</td>
+                        <td>Music</td>
+                        <td>Assembly</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="calculator">
+            <h2>🎯 GPA Calculator</h2>
+            <div class="calculator">
+                <p style="text-align: center; margin-bottom: 1rem; color: #666;">Calculate your Grade Point Average</p>
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="subject1">Subject 1 Grade (0-100):</label>
+                        <input type="number" id="subject1" min="0" max="100" placeholder="Enter grade">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject2">Subject 2 Grade (0-100):</label>
+                        <input type="number" id="subject2" min="0" max="100" placeholder="Enter grade">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject3">Subject 3 Grade (0-100):</label>
+                        <input type="number" id="subject3" min="0" max="100" placeholder="Enter grade">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject4">Subject 4 Grade (0-100):</label>
+                        <input type="number" id="subject4" min="0" max="100" placeholder="Enter grade">
+                    </div>
+                    <button class="calc-button" onclick="calculateGPA()">Calculate GPA</button>
+                    <div class="result" id="result"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Greenwood Academy. All rights reserved.</p>
+        <p>Contact us: info@greenwoodacademy.edu | Phone: (555) 123-4567</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
