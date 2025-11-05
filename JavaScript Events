@@ -1,1 +1,39 @@
 
+<html>
+    <head>
+        <tital>JavaScript Events</tital>
+    </head>
+
+    <body>
+                 <p>----------------------------------------------------------------------------------</p>
+        <script language="JavaScript" type="text/JavaScript">
+
+            function clickevent() {
+                document.write("Hello! You clicked button");
+            }
+        </script>
+        <form>
+            <input type="button" onclick="clickevent()" value="Click this button"/>
+        </form>
+                 <p>----------------------------------------------------------------------------------</p>
+        <script language="JavaScript" type="text/JavaScript">
+
+            function hoverevent() {
+                document.write("Hello! You hovered mouse point on button");
+            }
+        </script>
+        <form>
+            <input type="button" onmouseover="hoverevent()" value="Hover mouse on  this button"/>
+        </form>
+                 <p>----------------------------------------------------------------------------------</p>
+         <script language="JavaScript" type="text/JavaScript">
+
+            function oneydownevent() {
+                document.write("Hello! You try to type in text box");
+            }
+        </script>
+
+        <input type="text" id="input" onkeydown="oneydownevent()"/>
+        
+    </body>
+</html>
