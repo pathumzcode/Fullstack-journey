@@ -1,0 +1,112 @@
+/* ---------- GENERAL STYLES ---------- */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- HEADING ---------- */
+h1 {
+  text-align: center;
+  color: #2d3436;
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+/* ---------- LABELS ---------- */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+/* ---------- INPUT FIELDS ---------- */
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #0984e3;
+  box-shadow: 0 0 8px rgba(9, 132, 227, 0.3);
+}
+
+/* ---------- VALIDATION FEEDBACK ---------- */
+input.error {
+  border-color: #e74c3c;
+  background-color: #fdeaea;
+}
+
+label.error {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Optional valid state (green border when correct) */
+input.valid {
+  border-color: #00b894;
+  background-color: #ecfdf5;
+}
+
+/* ---------- BUTTON ---------- */
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  background: linear-gradient(90deg, #0984e3, #6c5ce7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #6c5ce7, #0984e3);
+  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 30px 25px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}

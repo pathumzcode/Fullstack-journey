@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Registration Form</title>
+
+  <!-- Include jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Include jQuery Validation plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+
+  <!-- External CSS for styling -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- External JavaScript file for validation -->
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <!-- Main container -->
+  <div class="container">
+    <h1>Registration Form</h1>
+
+    <!-- Registration form -->
+    <form name="registration" id="registrationForm" novalidate>
+      
+      <!-- Name field -->
+      <label for="name">Enter your Name</label>
+      <input type="text" name="name" id="name" placeholder="Your Name" />
+
+      <!-- Email field -->
+      <label for="email">Enter your Email</label>
+      <input type="email" name="email" id="email" placeholder="Your Email Address" />
+
+      <!-- Password field -->
+      <label for="password">Enter a Password</label>
+      <input type="password" name="password" id="password" placeholder="Your Password" />
+
+      <!-- Confirm Password field -->
+      <label for="confirmpassword">Confirm the Password</label>
+      <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Re-enter Your Password" />
+
+      <!-- Submit button -->
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
